@@ -1,0 +1,295 @@
+@charset "utf-8";
+
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+em,
+img,
+small,
+strong,
+b,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+nav,
+section,
+summary,
+video,
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    /* Prevent font scaling in landscape */
+
+    -webkit-text-size-adjust: none;
+    /*Chrome, Safari, newer versions of Opera*/
+
+    -moz-text-size-adjust: none;
+    /*Firefox*/
+
+    -ms-text-size-adjust: none;
+    /*Ie*/
+
+    -o-text-size-adjust: none;
+    /*old versions of Opera*/
+}
+
+body {
+    font-family: "Pretendard";
+    font-size: 14px;
+    line-height: 1.5;
+    color: #111;
+    background-color: #FBF9F5;
+}
+
+#wrap {
+    min-width: 1360px;
+}
+
+#bgwrap {
+    background: url(../images/visual/bg_sub.png) no-repeat center top;
+    background-size: 100%;
+}
+
+#sub_visual {
+    height: 900px;
+}
+
+/* --------- header -------- */
+#header {
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    font-family: "Exo 2", sans-serif;
+    width: 100%;
+
+    /* position 고정위치 */
+
+    position: fixed;  /* 메뉴 헤더고정 */
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.bg1 {
+    /* height: 50px; */
+    background-color: #8EC4C4;
+    transition: all 0.5s ease;
+}
+
+/* 스크롤 했을 때 바뀔 배경색, 높이 */
+/* 제어구문으로 나타남. */
+/* .header_scrolled {
+    background-color: #8EC4C4;
+    height: 50px;
+} */
+
+.inner_header {
+    width: 1320px;
+    margin: 0 auto;
+    height: 50px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+#nav {
+    width: calc(100%);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+}
+
+.gnb {
+    display: flex;
+}
+
+.gnb li a {
+    display: block;
+    margin: 0 6px;
+    /* 메뉴간 살짝 띄워줌 */
+    color: rgba(255, 255, 255, 0.9);
+
+    font-size: 16px;
+    font-weight: 600;
+
+    padding: 0 40px;
+}
+
+.gnb li a:hover {
+    color: #043E52;
+}
+
+.gnb li a.active {
+    color: #043E52;
+}
+
+
+
+/* --------------footer */
+#footer1 {
+    background: url(../images/footer/footer_bg.jpg) no-repeat;
+    height: 400px;
+}
+
+.inner_footer1 {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.ready {
+    font-size: 14px;
+    font-weight: lighter;
+    /* font-weight: 100; */
+    margin: 20px 0;
+
+    letter-spacing: 1px;
+}
+
+.slogan {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+
+.btn_awake {
+    display: inline-block;
+    padding: 6px 33px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    background-color: rgba(224, 106, 60, 0.3);
+    border-radius: 25px;
+    margin-top: 20px;
+
+    letter-spacing: 1px;
+
+    transform: translateY(10px);
+}
+
+#footer2 {
+    background-color: #202020;
+    height: 250px;
+}
+
+.inner_footer2 {
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 45px;
+}
+
+.footer_wrap1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text_pr {
+    text-align: left;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contact {
+    text-align: right;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+    font-weight: 200;
+
+    letter-spacing: 1px;
+}
+
+.contact .tel {
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+
+.copyright {
+    display: flex;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    justify-content: space-between;
+    margin-top: 25px;
+    padding-top: 20px;
+    font-weight: lighter;
+    font-size: 12px;
+    letter-spacing: 1px;
+
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* ------------top버튼 */
+
+.btn_wrap div {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+
+    /* position 고정 위치 */
+    position: fixed;
+    right: 20px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.contactBtn {
+    bottom: 70px;
+    margin-bottom: 50px;
+    margin-right: 100px;
+}
+
+.topBtn {
+    /* background-color: rgba(100, 100, 100, 0.2); */
+    bottom: 20px;
+    margin-bottom: 30px;
+    margin-right: 100px;
+}
